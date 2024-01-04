@@ -1,0 +1,95 @@
+/* Overall container */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+.container {
+  width: 80%; 
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+ 
+  align-items: center;
+  
+}
+
+/* Heading styles */
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input area styling */
+.input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Button styling */
+.Button, .button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Button:hover, .button:hover {
+  background-color: #012e5d;
+}
+
+/* Tasks list styling */
+.todos {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-wrap: break-word; /* Ensures text goes to the next line */
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-right: 10px; /* Gives some space between text and buttons */
+}
+
+/* Button in todo list */
+.todo-item .button {
+  margin-left: 10px;
+}
+
+/* Completed task styling */
+.todo-item span[style*="line-through"] {
+  color: #6c757d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
